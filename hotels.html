@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hotel Booking - [City Name]</title>
+    <style>
+        header {
+            background-color: #ffb3ba;
+            margin: 0px;
+            padding: 10px;
+            border-radius: 30px;
+
+        }
+        body{
+            background-color: #ffffba;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hotel Booking in [City Name]</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <!-- Hotel Booking Form -->
+    <div class="hotel-booking-form">
+        <form action="book_hotel.php" method="post">
+            <h2>Guest Information</h2>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <h2>Booking Details</h2>
+            <label for="check_in">Check-in Date:</label>
+            <input type="date" id="check_in" name="check_in" required>
+
+            <label for="check_out">Check-out Date:</label>
+            <input type="date" id="check_out" name="check_out" required>
+
+            <label for="num_of_guests">Number of Guests:</label>
+            <input type="number" id="num_of_guests" name="num_of_guests" required>
+
+            <label for="special_requests">Special Requests:</label>
+            <textarea id="special_requests" name="special_requests"></textarea>
+
+            <input type="submit" value="Submit Booking">
+        </form>
+    </div>
+
+</body>
+
+</html>
